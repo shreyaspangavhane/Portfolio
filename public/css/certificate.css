@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 17px;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    background-color: chartreuse;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subheader {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.subheader:hover {
+    font-size: 25px;
+}
+
+#active {
+    font-size: 25px;
+}
+
+.heading {
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+.certificate {
+    height: 130px;
+    margin-left: 50px;
+}
+
+.achivement {
+    display: flex;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    color: rgb(22, 22, 23);
+}
+
+.paper {
+    margin-top: 35px;
+    background-color: chartreuse;
+    padding: 20px;
+    margin-left: 200px;
+    border-radius: 20px;
+    height: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.parent {
+    width: 300px;
+    padding: 10px;
+    background-color: azure;
+    margin-top: 30px;
+    text-align: justify;
+    border-radius: 10px;
+    float: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.grandparent {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.grandparent1 {
+    margin-top: 70px;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.footer {
+    margin-top: 50px;
+    clear: both;
+    background-color: chartreuse;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-size: 17px;
+}
+
+.social_media_icon1 {
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+
+/* Animation on Scroll   */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.grandparent1 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
